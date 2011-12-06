@@ -6,7 +6,7 @@ $computer = rand(1, 3);
 /*
 1 = rock
 2 = paper
-3 = sissor 
+3 = Scissor 
 */
 
 echo 'Player: '.$player.'<br/>';
