@@ -9,64 +9,44 @@ computer = 1 + rand(3)
 3 = scissor
 =end
 
-# Player item
-if player == 1
-  player_item = 'rock'
-end
-if player == 2
-  player_item = 'paper'
-end
-if player == 3
-  player_item = 'scissor'
-end
-
-
-# Computer item
-if computer == 1
-  comp_item = 'rock'
-end
-if computer == 2
-  comp_item = 'paper'
-end
-if computer == 3
-  comp_item = 'scissor'
-end
+player = [:paper, :scissors, :rock][rand(3)]
+computer = [:paper, :scissors, :rock][rand(3)]
 
 # define rules
 
-#1
-if player == 1 && computer == 1
+#Rock
+if player == :rock && computer == :rock
   result = 'Draw'
 end
-if player == 1 && computer == 2
+if player == :rock && computer == :scissors
   result = 'Lose'
 end
-if player == 1 && computer == 3
+if player == :rock && computer == :paper
   result = 'Win'
 end
 
-#2
-if player == 2 && computer == 1
+#Paper
+if player == :scissors && computer == :rock
   result = 'Win'
 end
-if player == 2 && computer == 2
+if player == :scissors && computer == :scissors
   result = 'Draw'
 end
-if player == 2 && computer == 3
+if player == :scissors && computer == :paper
   result = 'Lose'
 end
 
-#3
-if player == 3 && computer == 1
+#Scissors
+if player == :paper && computer == :rock
   result = 'Lose'
 end
-if player == 3 && computer == 2
+if player == :paper && computer == :scissors
   result = 'Win'
 end
-if player == 3 && computer == 3
+if player == :paper && computer == :paper
   result = 'Draw'
 end
 
-print "\nPlayer : #{player}  #{player_item}\n"
-print "Computer : #{computer}  #{comp_item}\n"
+print "\nPlayer : #{player}  \n"
+print "Computer : #{computer} \n"
 print "\n#{result}\n\n"
