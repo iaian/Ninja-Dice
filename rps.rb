@@ -3,12 +3,7 @@
 player = 1 + rand(3)
 computer = 1 + rand(3)
 
-=begin
-1 = rock
-2 = paper
-3 = scissor
-=end
-
+# ah ruby how awesome
 player = [:paper, :scissors, :rock][rand(3)]
 computer = [:paper, :scissors, :rock][rand(3)]
 
@@ -49,4 +44,4 @@ end
 
 print "\nPlayer : #{player}  \n"
 print "Computer : #{computer} \n"
-print "\n#{result}\n\n"
+print "\nOutcome for the player : #{result}\n\n"
