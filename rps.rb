@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
 
-player = 1 + rand(3)
-computer = 1 + rand(3)
-
 # ah ruby how awesome
 player = [:paper, :scissors, :rock][rand(3)]
 computer = [:paper, :scissors, :rock][rand(3)]
